@@ -44,8 +44,13 @@
        <h3>Email:</h3>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="user_mail"><br>
        <h3>Suggessions:</h3>&nbsp&nbsp&nbsp&nbsp<textarea name="suggesion" rows="8" cols="50"></textarea><br>
        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-       <button class="btn-success btn-lg">Submit</button></div>
+       <button id="suggestionbutton" class="btn-success btn-lg" onclick="messagePop()">Submit</button></div>
        <h1 class="name middle"> <a href="index.html">BACK TO HOME</a> </h1>
+            <script>
+              function messagePop(){
+               document.getElementById("suggestionbutton").innerHTML.alert("Thank you for your suggestion");
+              }
+            </script>
 
        <!-- Optional JavaScript -->
        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
